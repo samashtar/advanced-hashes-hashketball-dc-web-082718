@@ -205,8 +205,9 @@ end
 def player_numbers(team)
   array2 = []
   game_hash.each do |location, team_data|
+     binding.pry
     if team_data.include? team
-      binding.pry
+     
       team_data.each do |attribute, values|
           if attribute == :players && 
               values.each do |person, data|
