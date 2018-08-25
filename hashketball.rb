@@ -212,7 +212,7 @@ def player_numbers(team)
              array2 << data[:number]
               
                 
-
+end
               end
             end
           end
