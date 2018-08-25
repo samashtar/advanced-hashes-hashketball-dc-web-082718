@@ -200,14 +200,14 @@ def player_stats(player_name)
 end
 
 
-def player_numbers(team)
+def player_numbers(player)
   game_hash.each do |location, team_data|
       team_data.each do |attribute, values|
           if attribute == :players
          values.each do |person, data|
                             binding.pry
 
-              if person == team
+              if person == player
                return data[:number]
               
                 end
