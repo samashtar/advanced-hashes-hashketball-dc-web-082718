@@ -213,11 +213,12 @@ def player_numbers(team)
               
                 
 end
-array2
+
               end
             end
           end
       end
+      array2
   end
  
 
