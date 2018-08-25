@@ -150,7 +150,9 @@ def shoe_size(player)
       team_data.each do |attribute, values|
           if attribute == :players
             values.each do |person, data|
+               binding.pry
               if person == player 
+                
                return data[:shoe]
               end
             end
@@ -205,7 +207,7 @@ def player_numbers(player)
       team_data.each do |attribute, values|
           if attribute == :players
          values.each do |person, data|
-                            binding.pry
+                           
 
               if person == player
                return data[:number]
