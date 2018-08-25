@@ -208,11 +208,14 @@ def player_numbers(team)
       team_data.each do |attribute, values|
           if attribute == :players
             array2 << values[:number]
-            
+              
+         values.each do |person, data|
+           binding.pry
+             array2 << data[:number]
               
                 
 
-              
+              end
             end
           end
       end
