@@ -205,10 +205,10 @@ end
 def player_numbers(team)
   array2 = []
   game_hash.each do |location, team_data|
+    if team = location
       team_data.each do |attribute, values|
-          if attribute == :players
+          if attribute == :players 
               values.each do |person, data|
-           binding.pry
              array2 << data[:number]
               
                 
