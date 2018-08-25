@@ -206,8 +206,9 @@ def player_numbers(team)
           if attribute == :players
          values.each do |person, data|
               if person == team
+                 binding.pry
                return data[:number]
-               binding.pry
+              
                 end
 
               end
