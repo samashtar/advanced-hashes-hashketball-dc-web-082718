@@ -210,7 +210,7 @@ def player_numbers(team)
          values.each do |person, data|
              array2 << data[:number]
               
-                end
+                
 
               end
             end
