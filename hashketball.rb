@@ -150,7 +150,7 @@ def shoe_size(player)
       team_data.each do |attribute, values|
           if attribute == :players
             values.each do |person, data|
-               binding.pry
+              
               if person == player 
                 
                return data[:shoe]
@@ -202,15 +202,13 @@ def player_stats(player_name)
 end
 
 
-def player_numbers(player)
+def player_numbers(team)
+  array2 = []
   game_hash.each do |location, team_data|
       team_data.each do |attribute, values|
           if attribute == :players
          values.each do |person, data|
-                           
-
-              if person == player
-               return data[:number]
+      return data[:number]
               
                 end
 
