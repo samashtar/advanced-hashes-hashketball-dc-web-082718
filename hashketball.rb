@@ -207,7 +207,7 @@ def player_numbers(team)
   game_hash.each do |location, team_data|
     if team_data[:team_name] = team
       team_data.each do |attribute, values|
-          if attribute == :players && 
+          if attribute == :players
               values.each do |person, data|
              array2 << data[:number]
               
