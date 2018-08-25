@@ -207,6 +207,7 @@ def player_numbers(team)
          values.each do |person, data|
               if person == team
                return data[:number]
+               binding.pry
                 end
 
               end
